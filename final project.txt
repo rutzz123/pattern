@@ -1,0 +1,193 @@
+
+Q-1
+
+#include <stdio.h>
+
+ int main()
+ {
+   printf("Hello world");
+return 0;
+}
+
+
+
+Q-2
+
+
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+  char fullname[100];
+  gets(fullname);
+  puts(fullname);
+    return 0;
+}
+
+Q-2.1
+
+#include <stdio.h>
+
+int main()
+{
+ int a=1;
+ int b=2;
+ int c=3;
+ 
+ if(a>b && a>c){
+     printf("%d",a);
+ }
+ else if(b>a && b>c){
+     printf("%d",b);
+ }
+ else(c>a && c>b);
+ {
+     printf("%d",c);
+ } 
+ 
+ 
+    return 0;
+}
+
+Q-2.2
+
+#include <stdio.h>
+int main()
+{
+  int a;
+  printf("enter your age:");
+  scanf("%d",&a);
+  if(a>=18){
+    printf("he or she can vote");
+  }else{
+    printf("he or she cannot vote");
+  }
+
+return 0;
+}
+
+
+Q-3
+
+BEFORE SWAPPING
+
+#include <stdio.h>
+void fun(int x,int y){
+printf("%d\n",x);
+printf("%d\n",y);
+}
+
+ int main()
+ {
+  int a=10;
+  int b=20;
+
+  fun(a,b);
+   
+return 0;
+}
+
+
+AFTER SWAPPING
+
+#include <stdio.h>
+void fun(int x,int y){
+  int temp;
+  temp=x;
+  x=y;
+  y=temp;
+printf("%d\n",x);
+printf("%d\n",y);
+}
+
+ int main()
+ {
+  int a=10;
+  int b=20;
+
+  fun(a,b);
+   
+return 0;
+}
+
+
+Q-4
+
+#include <stdio.h>
+int main()
+{
+  int a;
+  printf("enter the year:");
+  scanf("%d",&a);
+  if(a%4==0){
+    printf("it is a leap year");
+  }else{
+    printf("it is not a leap year");
+  }
+
+return 0;
+}
+
+Q-5
+
+#include <stdio.h>
+
+int main()
+{
+  int i;
+  int j;
+  for(int i=1 ; i<10 ; i++){
+  for(int j=1 ; j<8 ; j++){
+  if(i==1||i==9||j==1||j==7){
+    printf("* ");
+  }else{
+    printf("  ");
+  }
+  }
+  printf("\n");
+  }
+
+
+    return 0;
+}
+
+
+Q-6
+
+
+#include <stdio.h>
+#include <string.h>
+ struct employee{
+    int id;
+    char name[100];
+    int salary;
+  } s[100];
+int main()
+{
+  int n;
+  printf("enter the employees:");
+  scanf("%d",&n);
+  for(int i=0 ; i<n ; i++){
+    printf("enter the employee id:");
+    scanf("%d",&s[i].id);
+    printf("enter the employee name:");
+    scanf("%s",&s[i].name);
+    printf("enter the employee salary:");
+    scanf("%d",&s[i].salary);
+
+  }
+
+  for(int i=0 ; i<n ; i++){
+    printf("%d\n",s[i].id);
+    printf("%s\n",s[i].name);
+    printf("%d\n",s[i].salary);
+  }
+ 
+  
+return 0;
+}
+
+
+
+
+
